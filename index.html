@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tên của bạn – Trang cá nhân</title>
+  <meta name="description" content="Trang web cá nhân của tôi, đăng trên GitHub Pages.">
+  <style>
+    :root {
+      --bg: #f3f6f4;
+      --surface: #ffffff;
+      --text: #14201c;
+      --muted: #57665f;
+      --accent: #0b6e4f;
+      --accent-text: #ffffff;
+      --line: #d5dfda;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1a16;
+        --surface: #16251f;
+        --text: #e8f0ec;
+        --muted: #9db0a7;
+        --accent: #4fd1a1;
+        --accent-text: #0f1a16;
+        --line: #26382f;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+    }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+    nav strong { font-size: 1.05rem; }
+    nav ul { display: flex; gap: 18px; list-style: none; }
+    nav ul a { text-decoration: none; color: var(--muted); font-size: .95rem; }
+    nav ul a:hover { color: var(--text); }
+
+    .hero { padding: 72px 0 56px; }
+    .hero h1 { font-size: clamp(2rem, 7vw, 3.2rem); line-height: 1.15; margin-bottom: 16px; }
+    .hero p { color: var(--muted); font-size: 1.1rem; max-width: 52ch; margin-bottom: 28px; }
+    .btn {
+      display: inline-block; padding: 12px 22px; border-radius: 8px;
+      background: var(--accent); color: var(--accent-text);
+      text-decoration: none; font-weight: 600;
+    }
+    .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); margin-left: 8px; }
+
+    section { padding: 48px 0; border-top: 1px solid var(--line); }
+    section h2 { font-size: 1.5rem; margin-bottom: 16px; }
+    section p { max-width: 62ch; color: var(--muted); }
+
+    .projects { display: grid; gap: 14px; margin-top: 8px; }
+    .project {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 10px; padding: 18px 20px;
+    }
+    .project h3 { font-size: 1.05rem; margin-bottom: 4px; }
+    .project p { font-size: .95rem; }
+
+    footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <nav aria-label="Menu chính">
+        <strong>Tên của bạn</strong>
+        <ul>
+<li><a href="#gioi-thieu">Giới thiệu</a></li>
+          <li><a href="#du-an">Dự án</a></li>
+          <li><a href="#lien-he">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="hero">
+        <h1>Xin chào, tôi là [Tên của bạn]</h1>
+        <p>Tôi làm [nghề nghiệp / lĩnh vực]. Đây là nơi tôi chia sẻ những gì tôi đã làm và đang học.</p>
+        <a class="btn" href="#du-an">Xem dự án</a>
+        <a class="btn ghost" href="#lien-he">Liên hệ</a>
+      </div>
+
+      <section id="gioi-thieu">
+        <h2>Giới thiệu</h2>
+        <p>Viết vài câu về bản thân: bạn là ai, bạn làm gì, bạn quan tâm điều gì. Giữ ngắn gọn và cụ thể.</p>
+      </section>
+
+      <section id="du-an">
+        <h2>Dự án</h2>
+        <div class="projects">
+          <article class="project">
+            <h3><a href="https://github.com/ten-cua-ban/du-an-1">Dự án 1</a></h3>
+            <p>Mô tả một dòng: dự án làm gì và dành cho ai.</p>
+          </article>
+          <article class="project">
+            <h3><a href="https://github.com/ten-cua-ban/du-an-2">Dự án 2</a></h3>
+            <p>Mô tả một dòng: dự án làm gì và dành cho ai.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="lien-he">
+        <h2>Liên hệ</h2>
+        <p>
+          Email: <a href="mailto:email@example.com">email@example.com</a><br>
+          GitHub: <a href="https://github.com/ten-cua-ban">github.com/ten-cua-ban</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Tên của bạn</div>
+  </footer>
+
+</body>
+</html>
